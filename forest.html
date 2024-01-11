@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>
+body{background-image:url(https://images.pexels.com/photos/3552472/pexels-photo-3552472.jpeg?auto=compress&cs=tinysrgb&w=600);background-repeat: no-repeat;background-attachment:fixed;background-size:100%;}
+h1{color: rgb(234, 108, 18);text-align: center;font-size:80;}
+h3{text-align: center;font-size:60;color: rgb(86, 218, 53);}
+pre{color: rgb(220, 255, 19);font-size:xx-large;font-weight: 800;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.button1{height: 100px;width: 300px;font-size:30;color: rgb(21, 76, 216);font-family:inherit;}
+div{color: chocolate;font-size: larger;}
+input{background-color: darkturquoise;}
+</style>
+</head>
+<body>
+<form method="post" action="{{url_for('predict')}}">
+<br><br><h1>Forest Fire Prevention</h1> 
+<h3>Predict the probability of Forest Fire Occurence</h3>      
+<center><pre class="preview">
+Temperature: <input type="number" name="temp" style="height: 35;font-size:large;">       Oxygen: <input type="number" name="oxy" style="height: 35;font-size:large;">      Humidity: <input type="number" name="humi" style="height: 35;font-size:large;"></right>
+<br><br><br><center><input type="submit" name="submit" class="button1" value="Predict Probability"></center>
+</pre></center>
+<!-- <form action="http://localhost:5000/predict" method="get">
+<textarea name="" id="" cols="30" rows="10"></textarea>
+</form> -->
+</body>
+</html>
